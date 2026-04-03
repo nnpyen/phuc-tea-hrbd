@@ -71,3 +71,17 @@ On page **Trang Import** -> block **Supabase Cloud Sync**:
 - Share the dashboard URL with teammates.
 - Each teammate inputs the same Supabase URL + anon key once.
 - Click `Tải từ cloud` first time to load latest shared data.
+
+## 6) Auto config for everyone (Vercel, no manual input)
+
+If deployed on Vercel, app can auto-load Supabase config for all users.
+
+In Vercel project -> **Settings** -> **Environment Variables**, add:
+
+- `SUPABASE_URL` = your project URL
+- `SUPABASE_ANON_KEY` = your anon public key
+- `SUPABASE_TABLE` = `dashboard_state`
+- `SUPABASE_STATE_KEY` = `global`
+- `SUPABASE_AUTO_SYNC` = `true`
+
+Then redeploy the project. After that, teammates open the dashboard link and cloud sync fields are prefilled automatically.

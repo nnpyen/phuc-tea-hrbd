@@ -3458,6 +3458,25 @@
     return JSON.parse(JSON.stringify(obj || {}));
   }
 
+  function getRuntimeCloudDefaults() {
+    const runtime = window.__HRBD_CLOUD_CONFIG__ || {};
+    const url = cleanText(runtime.url || runtime.supabaseUrl);
+    const anonKey = cleanText(runtime.anonKey || runtime.supabaseAnonKey);
+    if (!url || !anonKey) return null;
+
+    const table = cleanText(runtime.table) || "dashboard_state";
+    const stateKey = cleanText(runtime.stateKey) || "global";
+    const autoSync = typeof runtime.autoSync === "boolean" ? runtime.autoSync : true;
+
+    return {
+      url,
+      anonKey,
+      table,
+      stateKey,
+      autoSync,
+    };
+  }
+
   function defaultCloudConfig() {
     return {
       provider: "supabase",
@@ -3473,16 +3492,34 @@
   }
 
   function loadCloudConfig() {
+    const runtimeDefaults = getRuntimeCloudDefaults();
     try {
       const raw = localStorage.getItem(CLOUD_CFG_KEY);
-      if (!raw) return defaultCloudConfig();
+      if (!raw) {
+        return {
+          ...defaultCloudConfig(),
+          ...(runtimeDefaults || {}),
+        };
+      }
       const parsed = JSON.parse(raw);
-      return {
+      const merged = {
         ...defaultCloudConfig(),
+        ...(runtimeDefaults || {}),
         ...(parsed || {}),
       };
+      if (runtimeDefaults) {
+        if (!cleanText(merged.url)) merged.url = runtimeDefaults.url;
+        if (!cleanText(merged.anonKey)) merged.anonKey = runtimeDefaults.anonKey;
+        if (!cleanText(merged.table)) merged.table = runtimeDefaults.table;
+        if (!cleanText(merged.stateKey)) merged.stateKey = runtimeDefaults.stateKey;
+        if (typeof parsed?.autoSync !== "boolean") merged.autoSync = runtimeDefaults.autoSync;
+      }
+      return merged;
     } catch (error) {
-      return defaultCloudConfig();
+      return {
+        ...defaultCloudConfig(),
+        ...(runtimeDefaults || {}),
+      };
     }
   }
 
