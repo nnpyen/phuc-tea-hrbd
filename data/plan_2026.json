@@ -1,0 +1,2828 @@
+{
+  "meta": {
+    "title": "HR + Business Development Dashboard 2026",
+    "year": 2026,
+    "updatedAt": "2026-04-02T15:30:32",
+    "weights": {
+      "HR": 0.45,
+      "VN": 0.45,
+      "INTL": 0.1
+    },
+    "sourceFile": "/Users/nguyenngocphiyen/Downloads/KẾ HOẠCH 2026.xlsx"
+  },
+  "settings": {
+    "thresholds": {
+      "good": 0.9,
+      "watch": 0.75
+    }
+  },
+  "annualPlan": [
+    {
+      "stt": "1.0",
+      "kpiCode": "HR1",
+      "pillar": "Human Resource",
+      "objective": "Vận hành HR chuẩn và đúng hạn, giảm lỗi vận hành",
+      "kpiName": "Payroll đúng hạn & sai sót trong ngưỡng cho phép.",
+      "unit": "%",
+      "targetYear": 100.0,
+      "actualYear": null,
+      "owner": "",
+      "initiatives": "",
+      "dependencies": "",
+      "due": "",
+      "status": "",
+      "notes": ""
+    },
+    {
+      "stt": "2.0",
+      "kpiCode": "HR2",
+      "pillar": "Human Resource",
+      "objective": "",
+      "kpiName": "Hoàn thiện hệ thống hồ sơ/quy trình HR (folder – mẫu – checklist).",
+      "unit": "%",
+      "targetYear": 100.0,
+      "actualYear": null,
+      "owner": "",
+      "initiatives": "",
+      "dependencies": "",
+      "due": "",
+      "status": "",
+      "notes": ""
+    },
+    {
+      "stt": "3.0",
+      "kpiCode": "HR3",
+      "pillar": "Human Resource",
+      "objective": "Chuẩn hoá nền tảng quản trị hiệu suất & JD",
+      "kpiName": "Tỷ lệ phủ JD/KPI theo lộ trình đã thống nhất.",
+      "unit": "%",
+      "targetYear": 100.0,
+      "actualYear": null,
+      "owner": "",
+      "initiatives": "",
+      "dependencies": "",
+      "due": "",
+      "status": "",
+      "notes": ""
+    },
+    {
+      "stt": "4.0",
+      "kpiCode": "HR4",
+      "pillar": "Human Resource",
+      "objective": "",
+      "kpiName": "Triển khai chu kỳ đánh giá/feedback đúng hạn.",
+      "unit": "%",
+      "targetYear": 90.0,
+      "actualYear": null,
+      "owner": "",
+      "initiatives": "",
+      "dependencies": "",
+      "due": "",
+      "status": "",
+      "notes": ""
+    },
+    {
+      "stt": "5.0",
+      "kpiCode": "HR5",
+      "pillar": "Human Resource",
+      "objective": "Case management & quan hệ lao động chạy theo SLA",
+      "kpiName": "Tỷ lệ case nóng được xử lý đúng SLA",
+      "unit": "%",
+      "targetYear": 80.0,
+      "actualYear": null,
+      "owner": "",
+      "initiatives": "",
+      "dependencies": "",
+      "due": "",
+      "status": "",
+      "notes": ""
+    },
+    {
+      "stt": "6.0",
+      "kpiCode": "HR6",
+      "pillar": "Human Resource",
+      "objective": "",
+      "kpiName": "Tỷ lệ case nóng được đóng trong tháng",
+      "unit": "%",
+      "targetYear": 80.0,
+      "actualYear": null,
+      "owner": "",
+      "initiatives": "",
+      "dependencies": "",
+      "due": "",
+      "status": "",
+      "notes": ""
+    },
+    {
+      "stt": "7.0",
+      "kpiCode": "VN1",
+      "pillar": "National Franchise Development",
+      "objective": "Đạt mục tiêu mở mới 2026",
+      "kpiName": "Tổng số lượng cửa hàng Phúc Tea & The Hoa mở mới",
+      "unit": "Cửa hàng",
+      "targetYear": 30.0,
+      "actualYear": null,
+      "owner": "",
+      "initiatives": "",
+      "dependencies": "",
+      "due": "",
+      "status": "",
+      "notes": ""
+    },
+    {
+      "stt": "8.0",
+      "kpiCode": "VN2",
+      "pillar": "National Franchise Development",
+      "objective": "Pipeline có thể dự báo và không phụ thuộc may mắn",
+      "kpiName": "Số lượng Lead đủ chuẩn (SQL)/tháng",
+      "unit": "Lead",
+      "targetYear": 300.0,
+      "actualYear": null,
+      "owner": "",
+      "initiatives": "",
+      "dependencies": "",
+      "due": "",
+      "status": "",
+      "notes": ""
+    },
+    {
+      "stt": "9.0",
+      "kpiCode": "VN3",
+      "pillar": "National Franchise Development",
+      "objective": "",
+      "kpiName": "Tỷ lệ tư vấn khách hàng lần đầu theo SLA",
+      "unit": "%",
+      "targetYear": 90.0,
+      "actualYear": null,
+      "owner": "",
+      "initiatives": "",
+      "dependencies": "",
+      "due": "",
+      "status": "",
+      "notes": ""
+    },
+    {
+      "stt": "10.0",
+      "kpiCode": "VN4",
+      "pillar": "National Franchise Development",
+      "objective": "Doanh thu nhượng quyền theo thực thu",
+      "kpiName": "Thực thu nhượng quyền",
+      "unit": "VND",
+      "targetYear": 1500000000.0,
+      "actualYear": null,
+      "owner": "",
+      "initiatives": "",
+      "dependencies": "",
+      "due": "",
+      "status": "",
+      "notes": ""
+    },
+    {
+      "stt": "11.0",
+      "kpiCode": "VN5",
+      "pillar": "National Franchise Development",
+      "objective": "Chăm sóc đối tác đúng hành trình",
+      "kpiName": "Tỷ lệ đảm bảo chăm sóc đối tác mới theo hành trình",
+      "unit": "%",
+      "targetYear": 90.0,
+      "actualYear": null,
+      "owner": "",
+      "initiatives": "",
+      "dependencies": "",
+      "due": "",
+      "status": "",
+      "notes": ""
+    },
+    {
+      "stt": "12.0",
+      "kpiCode": "VN6",
+      "pillar": "National Franchise Development",
+      "objective": "",
+      "kpiName": "Tỷ lệ đảm bảo chăm sóc đối tác hiện hữu đúng cadence (2 quý/1 lần)",
+      "unit": "%",
+      "targetYear": 90.0,
+      "actualYear": null,
+      "owner": "",
+      "initiatives": "",
+      "dependencies": "",
+      "due": "",
+      "status": "",
+      "notes": ""
+    },
+    {
+      "stt": "13.0",
+      "kpiCode": "INT1",
+      "pillar": "International Franchise Development",
+      "objective": "Khai trương đúng chuẩn, vận hành ổn định ngay từ ngày mở",
+      "kpiName": "Tỷ lệ sự cố nghiêm trọng được phản hồi trong SLA",
+      "unit": "%",
+      "targetYear": 90.0,
+      "actualYear": null,
+      "owner": "",
+      "initiatives": "",
+      "dependencies": "",
+      "due": "",
+      "status": "",
+      "notes": ""
+    },
+    {
+      "stt": "14.0",
+      "kpiCode": "INT2",
+      "pillar": "International Franchise Development",
+      "objective": "Duy trì tương tác với đối tác để giảm sự cố và tăng hiệu quả vận hành",
+      "kpiName": "Tỷ lệ đối tác trọng điểm có lịch check-in đúng nhịp (tuần/tháng theo giai đoạn)",
+      "unit": "%",
+      "targetYear": 100.0,
+      "actualYear": null,
+      "owner": "",
+      "initiatives": "",
+      "dependencies": "",
+      "due": "",
+      "status": "",
+      "notes": ""
+    },
+    {
+      "stt": "15.0",
+      "kpiCode": "INT3",
+      "pillar": "International Franchise Development",
+      "objective": "Chuyển giao năng lực vận hành để đối tác tự chạy, giảm phụ thuộc HQ",
+      "kpiName": "Tỷ lệ nhân sự chủ chốt của đối tác hoàn tất đào tạo bắt buộc trước/đúng thời điểm khai trương",
+      "unit": "%",
+      "targetYear": 80.0,
+      "actualYear": null,
+      "owner": "",
+      "initiatives": "",
+      "dependencies": "",
+      "due": "",
+      "status": "",
+      "notes": ""
+    }
+  ],
+  "quarterPlan": [
+    {
+      "quarter": "I",
+      "pillar": "Human Resource",
+      "objective": "Vận hành HR chuẩn và đúng hạn, giảm lỗi vận hành",
+      "kpiName": "Payroll đúng hạn & sai sót trong ngưỡng cho phép.",
+      "unit": "%",
+      "targetQuarter": 100.0,
+      "actualQuarter": null,
+      "milestones": "",
+      "keyActions": "",
+      "owner": "",
+      "due": "",
+      "status": "",
+      "notes": ""
+    },
+    {
+      "quarter": "I",
+      "pillar": "Human Resource",
+      "objective": "",
+      "kpiName": "Hoàn thiện hệ thống hồ sơ/quy trình HR (folder – mẫu – checklist).",
+      "unit": "%",
+      "targetQuarter": 45.0,
+      "actualQuarter": null,
+      "milestones": "",
+      "keyActions": "",
+      "owner": "",
+      "due": "",
+      "status": "",
+      "notes": ""
+    },
+    {
+      "quarter": "I",
+      "pillar": "Human Resource",
+      "objective": "Chuẩn hoá nền tảng quản trị hiệu suất & JD",
+      "kpiName": "Tỷ lệ phủ JD/KPI theo lộ trình đã thống nhất.",
+      "unit": "%",
+      "targetQuarter": 35.0,
+      "actualQuarter": null,
+      "milestones": "",
+      "keyActions": "",
+      "owner": "",
+      "due": "",
+      "status": "",
+      "notes": ""
+    },
+    {
+      "quarter": "I",
+      "pillar": "Human Resource",
+      "objective": "",
+      "kpiName": "Triển khai chu kỳ đánh giá/feedback đúng hạn.",
+      "unit": "%",
+      "targetQuarter": 90.0,
+      "actualQuarter": null,
+      "milestones": "",
+      "keyActions": "",
+      "owner": "",
+      "due": "",
+      "status": "",
+      "notes": ""
+    },
+    {
+      "quarter": "I",
+      "pillar": "Human Resource",
+      "objective": "Case management & quan hệ lao động chạy theo SLA",
+      "kpiName": "Tỷ lệ case nóng được xử lý đúng SLA",
+      "unit": "%",
+      "targetQuarter": 80.0,
+      "actualQuarter": null,
+      "milestones": "",
+      "keyActions": "",
+      "owner": "",
+      "due": "",
+      "status": "",
+      "notes": ""
+    },
+    {
+      "quarter": "I",
+      "pillar": "Human Resource",
+      "objective": "",
+      "kpiName": "Tỷ lệ case nóng được đóng trong tháng",
+      "unit": "%",
+      "targetQuarter": 80.0,
+      "actualQuarter": null,
+      "milestones": "",
+      "keyActions": "",
+      "owner": "",
+      "due": "",
+      "status": "",
+      "notes": ""
+    },
+    {
+      "quarter": "I",
+      "pillar": "National Franchise Development",
+      "objective": "Đạt mục tiêu mở mới 2026",
+      "kpiName": "Tổng số lượng cửa hàng Phúc Tea & The Hoa mở mới",
+      "unit": "Cửa hàng",
+      "targetQuarter": 1.0,
+      "actualQuarter": null,
+      "milestones": "",
+      "keyActions": "",
+      "owner": "",
+      "due": "",
+      "status": "",
+      "notes": ""
+    },
+    {
+      "quarter": "I",
+      "pillar": "National Franchise Development",
+      "objective": "Pipeline có thể dự báo và không phụ thuộc may mắn",
+      "kpiName": "Số lượng Lead đủ chuẩn (SQL)/tháng",
+      "unit": "Lead",
+      "targetQuarter": 10.0,
+      "actualQuarter": null,
+      "milestones": "",
+      "keyActions": "",
+      "owner": "",
+      "due": "",
+      "status": "",
+      "notes": ""
+    },
+    {
+      "quarter": "I",
+      "pillar": "National Franchise Development",
+      "objective": "",
+      "kpiName": "Tỷ lệ tư vấn khách hàng lần đầu theo SLA",
+      "unit": "%",
+      "targetQuarter": 90.0,
+      "actualQuarter": null,
+      "milestones": "",
+      "keyActions": "",
+      "owner": "",
+      "due": "",
+      "status": "",
+      "notes": ""
+    },
+    {
+      "quarter": "I",
+      "pillar": "National Franchise Development",
+      "objective": "Doanh thu nhượng quyền theo thực thu",
+      "kpiName": "Thực thu nhượng quyền",
+      "unit": "VND",
+      "targetQuarter": 50000000.0,
+      "actualQuarter": null,
+      "milestones": "",
+      "keyActions": "",
+      "owner": "",
+      "due": "",
+      "status": "",
+      "notes": ""
+    },
+    {
+      "quarter": "I",
+      "pillar": "National Franchise Development",
+      "objective": "Chăm sóc đối tác đúng hành trình",
+      "kpiName": "Tỷ lệ đảm bảo chăm sóc đối tác mới theo hành trình",
+      "unit": "%",
+      "targetQuarter": 90.0,
+      "actualQuarter": null,
+      "milestones": "",
+      "keyActions": "",
+      "owner": "",
+      "due": "",
+      "status": "",
+      "notes": ""
+    },
+    {
+      "quarter": "I",
+      "pillar": "National Franchise Development",
+      "objective": "",
+      "kpiName": "Tỷ lệ đảm bảo chăm sóc đối tác hiện hữu đúng cadence (2 quý/1 lần)",
+      "unit": "%",
+      "targetQuarter": 90.0,
+      "actualQuarter": null,
+      "milestones": "",
+      "keyActions": "",
+      "owner": "",
+      "due": "",
+      "status": "",
+      "notes": ""
+    },
+    {
+      "quarter": "I",
+      "pillar": "International Franchise Development",
+      "objective": "Khai trương đúng chuẩn, vận hành ổn định ngay từ ngày mở",
+      "kpiName": "Tỷ lệ sự cố nghiêm trọng được phản hồi trong SLA",
+      "unit": "%",
+      "targetQuarter": 90.0,
+      "actualQuarter": null,
+      "milestones": "",
+      "keyActions": "",
+      "owner": "",
+      "due": "",
+      "status": "",
+      "notes": ""
+    },
+    {
+      "quarter": "I",
+      "pillar": "International Franchise Development",
+      "objective": "Duy trì tương tác với đối tác để giảm sự cố và tăng hiệu quả vận hành",
+      "kpiName": "Tỷ lệ đối tác trọng điểm có lịch check-in đúng nhịp (tuần/tháng theo giai đoạn)",
+      "unit": "%",
+      "targetQuarter": 100.0,
+      "actualQuarter": null,
+      "milestones": "",
+      "keyActions": "",
+      "owner": "",
+      "due": "",
+      "status": "",
+      "notes": ""
+    },
+    {
+      "quarter": "I",
+      "pillar": "International Franchise Development",
+      "objective": "Chuyển giao năng lực vận hành để đối tác tự chạy, giảm phụ thuộc HQ",
+      "kpiName": "Tỷ lệ nhân sự chủ chốt của đối tác hoàn tất đào tạo bắt buộc trước/đúng thời điểm khai trương",
+      "unit": "%",
+      "targetQuarter": 80.0,
+      "actualQuarter": null,
+      "milestones": "",
+      "keyActions": "",
+      "owner": "",
+      "due": "",
+      "status": "",
+      "notes": ""
+    }
+  ],
+  "scorecards": {
+    "HR": {
+      "kpiCodes": [
+        "HR1",
+        "HR2",
+        "HR3",
+        "HR4",
+        "HR5",
+        "HR6"
+      ],
+      "months": [
+        {
+          "month": "Jan",
+          "quarter": "Q1",
+          "pillarScore": null,
+          "kpis": {
+            "HR1": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "HR2": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "HR3": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "HR4": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "HR5": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "HR6": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            }
+          }
+        },
+        {
+          "month": "Feb",
+          "quarter": "Q1",
+          "pillarScore": null,
+          "kpis": {
+            "HR1": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "HR2": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "HR3": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "HR4": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "HR5": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "HR6": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            }
+          }
+        },
+        {
+          "month": "Mar",
+          "quarter": "Q1",
+          "pillarScore": 0.67,
+          "kpis": {
+            "HR1": {
+              "target": 100.0,
+              "actual": 1.0,
+              "score": 0.01,
+              "manualScore": null
+            },
+            "HR2": {
+              "target": 45.0,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "HR3": {
+              "target": 35.0,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "HR4": {
+              "target": 90.0,
+              "actual": 100.0,
+              "score": 1.0,
+              "manualScore": null
+            },
+            "HR5": {
+              "target": 80.0,
+              "actual": 100.0,
+              "score": 1.0,
+              "manualScore": null
+            },
+            "HR6": {
+              "target": 80.0,
+              "actual": null,
+              "score": null,
+              "manualScore": 100.0
+            }
+          }
+        },
+        {
+          "month": "Apr",
+          "quarter": "Q2",
+          "pillarScore": null,
+          "kpis": {
+            "HR1": {
+              "target": 100.0,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "HR2": {
+              "target": 60.0,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "HR3": {
+              "target": 60.0,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "HR4": {
+              "target": 90.0,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "HR5": {
+              "target": 80.0,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "HR6": {
+              "target": 80.0,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            }
+          }
+        },
+        {
+          "month": "May",
+          "quarter": "Q2",
+          "pillarScore": null,
+          "kpis": {
+            "HR1": {
+              "target": 100.0,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "HR2": {
+              "target": 80.0,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "HR3": {
+              "target": 70.0,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "HR4": {
+              "target": 90.0,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "HR5": {
+              "target": 80.0,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "HR6": {
+              "target": 80.0,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            }
+          }
+        },
+        {
+          "month": "Jun",
+          "quarter": "Q2",
+          "pillarScore": null,
+          "kpis": {
+            "HR1": {
+              "target": 100.0,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "HR2": {
+              "target": 100.0,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "HR3": {
+              "target": 80.0,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "HR4": {
+              "target": 90.0,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "HR5": {
+              "target": 80.0,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "HR6": {
+              "target": 80.0,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            }
+          }
+        },
+        {
+          "month": "Jul",
+          "quarter": "Q3",
+          "pillarScore": null,
+          "kpis": {
+            "HR1": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "HR2": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "HR3": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "HR4": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "HR5": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "HR6": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            }
+          }
+        },
+        {
+          "month": "Aug",
+          "quarter": "Q3",
+          "pillarScore": null,
+          "kpis": {
+            "HR1": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "HR2": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "HR3": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "HR4": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "HR5": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "HR6": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            }
+          }
+        },
+        {
+          "month": "Sep",
+          "quarter": "Q3",
+          "pillarScore": null,
+          "kpis": {
+            "HR1": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "HR2": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "HR3": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "HR4": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "HR5": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "HR6": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            }
+          }
+        },
+        {
+          "month": "Oct",
+          "quarter": "Q4",
+          "pillarScore": null,
+          "kpis": {
+            "HR1": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "HR2": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "HR3": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "HR4": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "HR5": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "HR6": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            }
+          }
+        },
+        {
+          "month": "Nov",
+          "quarter": "Q4",
+          "pillarScore": null,
+          "kpis": {
+            "HR1": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "HR2": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "HR3": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "HR4": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "HR5": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "HR6": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            }
+          }
+        },
+        {
+          "month": "Dec",
+          "quarter": "Q4",
+          "pillarScore": null,
+          "kpis": {
+            "HR1": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "HR2": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "HR3": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "HR4": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "HR5": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "HR6": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            }
+          }
+        },
+        {
+          "month": "Q1",
+          "quarter": "1-3",
+          "pillarScore": 0.67,
+          "kpis": {
+            "HR1": {
+              "target": 100.0,
+              "actual": 1.0,
+              "score": 0.01,
+              "manualScore": null
+            },
+            "HR2": {
+              "target": 45.0,
+              "actual": 0.0,
+              "score": 0.0,
+              "manualScore": null
+            },
+            "HR3": {
+              "target": 35.0,
+              "actual": 0.0,
+              "score": 0.0,
+              "manualScore": null
+            },
+            "HR4": {
+              "target": 90.0,
+              "actual": 100.0,
+              "score": 1.0,
+              "manualScore": null
+            },
+            "HR5": {
+              "target": 80.0,
+              "actual": 100.0,
+              "score": 1.0,
+              "manualScore": null
+            },
+            "HR6": {
+              "target": 80.0,
+              "actual": 0.0,
+              "score": null,
+              "manualScore": 100.0
+            }
+          }
+        },
+        {
+          "month": "Q2",
+          "quarter": "4-6",
+          "pillarScore": null,
+          "kpis": {
+            "HR1": {
+              "target": 300.0,
+              "actual": 0.0,
+              "score": 0.0,
+              "manualScore": null
+            },
+            "HR2": {
+              "target": 240.0,
+              "actual": 0.0,
+              "score": 0.0,
+              "manualScore": null
+            },
+            "HR3": {
+              "target": 210.0,
+              "actual": 0.0,
+              "score": 0.0,
+              "manualScore": null
+            },
+            "HR4": {
+              "target": 270.0,
+              "actual": 0.0,
+              "score": 0.0,
+              "manualScore": null
+            },
+            "HR5": {
+              "target": 240.0,
+              "actual": 0.0,
+              "score": 0.0,
+              "manualScore": null
+            },
+            "HR6": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            }
+          }
+        },
+        {
+          "month": "Q3",
+          "quarter": "7-9",
+          "pillarScore": null,
+          "kpis": {
+            "HR1": {
+              "target": 0.0,
+              "actual": 0.0,
+              "score": null,
+              "manualScore": null
+            },
+            "HR2": {
+              "target": 0.0,
+              "actual": 0.0,
+              "score": null,
+              "manualScore": null
+            },
+            "HR3": {
+              "target": 0.0,
+              "actual": 0.0,
+              "score": null,
+              "manualScore": null
+            },
+            "HR4": {
+              "target": 0.0,
+              "actual": 0.0,
+              "score": null,
+              "manualScore": null
+            },
+            "HR5": {
+              "target": 0.0,
+              "actual": 0.0,
+              "score": null,
+              "manualScore": null
+            },
+            "HR6": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            }
+          }
+        },
+        {
+          "month": "Q4",
+          "quarter": "10-12",
+          "pillarScore": null,
+          "kpis": {
+            "HR1": {
+              "target": 0.0,
+              "actual": 0.0,
+              "score": null,
+              "manualScore": null
+            },
+            "HR2": {
+              "target": 0.0,
+              "actual": 0.0,
+              "score": null,
+              "manualScore": null
+            },
+            "HR3": {
+              "target": 0.0,
+              "actual": 0.0,
+              "score": null,
+              "manualScore": null
+            },
+            "HR4": {
+              "target": 0.0,
+              "actual": 0.0,
+              "score": null,
+              "manualScore": null
+            },
+            "HR5": {
+              "target": 0.0,
+              "actual": 0.0,
+              "score": null,
+              "manualScore": null
+            },
+            "HR6": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            }
+          }
+        },
+        {
+          "month": "YTD",
+          "quarter": "1-12",
+          "pillarScore": 0.67,
+          "kpis": {
+            "HR1": {
+              "target": 400.0,
+              "actual": 1.0,
+              "score": 0.0025,
+              "manualScore": null
+            },
+            "HR2": {
+              "target": 285.0,
+              "actual": 0.0,
+              "score": 0.0,
+              "manualScore": null
+            },
+            "HR3": {
+              "target": 245.0,
+              "actual": 0.0,
+              "score": 0.0,
+              "manualScore": null
+            },
+            "HR4": {
+              "target": 360.0,
+              "actual": 100.0,
+              "score": 0.2777777778,
+              "manualScore": null
+            },
+            "HR5": {
+              "target": 320.0,
+              "actual": 100.0,
+              "score": 0.3125,
+              "manualScore": null
+            },
+            "HR6": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            }
+          }
+        }
+      ]
+    },
+    "VN": {
+      "kpiCodes": [
+        "VN1",
+        "VN2",
+        "VN3",
+        "VN4",
+        "VN5",
+        "VN6"
+      ],
+      "months": [
+        {
+          "month": "Jan",
+          "quarter": "Q1",
+          "pillarScore": null,
+          "kpis": {
+            "VN1": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN2": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN3": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN4": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN5": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN6": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            }
+          }
+        },
+        {
+          "month": "Feb",
+          "quarter": "Q1",
+          "pillarScore": null,
+          "kpis": {
+            "VN1": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN2": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN3": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN4": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN5": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN6": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            }
+          }
+        },
+        {
+          "month": "Mar",
+          "quarter": "Q1",
+          "pillarScore": 0.9966666667,
+          "kpis": {
+            "VN1": {
+              "target": 1.0,
+              "actual": 1.0,
+              "score": 1.0,
+              "manualScore": null
+            },
+            "VN2": {
+              "target": 10.0,
+              "actual": 16.0,
+              "score": 1.0,
+              "manualScore": null
+            },
+            "VN3": {
+              "target": 90.0,
+              "actual": 100.0,
+              "score": 1.0,
+              "manualScore": null
+            },
+            "VN4": {
+              "target": 50000000.0,
+              "actual": 193600000.0,
+              "score": 1.0,
+              "manualScore": null
+            },
+            "VN5": {
+              "target": 0.9,
+              "actual": 0.875,
+              "score": 0.9722222222,
+              "manualScore": null
+            },
+            "VN6": {
+              "target": 0.9,
+              "actual": 1.0,
+              "score": 1.0,
+              "manualScore": null
+            }
+          }
+        },
+        {
+          "month": "Apr",
+          "quarter": "Q2",
+          "pillarScore": null,
+          "kpis": {
+            "VN1": {
+              "target": 3.0,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN2": {
+              "target": 64.0,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN3": {
+              "target": 90.0,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN4": {
+              "target": 150000000.0,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN5": {
+              "target": 0.9,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN6": {
+              "target": 0.9,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            }
+          }
+        },
+        {
+          "month": "May",
+          "quarter": "Q2",
+          "pillarScore": null,
+          "kpis": {
+            "VN1": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN2": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN3": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN4": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN5": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN6": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            }
+          }
+        },
+        {
+          "month": "Jun",
+          "quarter": "Q2",
+          "pillarScore": null,
+          "kpis": {
+            "VN1": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN2": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN3": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN4": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN5": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN6": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            }
+          }
+        },
+        {
+          "month": "Jul",
+          "quarter": "Q3",
+          "pillarScore": null,
+          "kpis": {
+            "VN1": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN2": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN3": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN4": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN5": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN6": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            }
+          }
+        },
+        {
+          "month": "Aug",
+          "quarter": "Q3",
+          "pillarScore": null,
+          "kpis": {
+            "VN1": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN2": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN3": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN4": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN5": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN6": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            }
+          }
+        },
+        {
+          "month": "Sep",
+          "quarter": "Q3",
+          "pillarScore": null,
+          "kpis": {
+            "VN1": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN2": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN3": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN4": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN5": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN6": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            }
+          }
+        },
+        {
+          "month": "Oct",
+          "quarter": "Q4",
+          "pillarScore": null,
+          "kpis": {
+            "VN1": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN2": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN3": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN4": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN5": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN6": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            }
+          }
+        },
+        {
+          "month": "Nov",
+          "quarter": "Q4",
+          "pillarScore": null,
+          "kpis": {
+            "VN1": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN2": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN3": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN4": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN5": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN6": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            }
+          }
+        },
+        {
+          "month": "Dec",
+          "quarter": "Q4",
+          "pillarScore": null,
+          "kpis": {
+            "VN1": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN2": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN3": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN4": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN5": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN6": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            }
+          }
+        },
+        {
+          "month": "Q1",
+          "quarter": "1-3",
+          "pillarScore": 0.9966666667,
+          "kpis": {
+            "VN1": {
+              "target": 1.0,
+              "actual": 1.0,
+              "score": 1.0,
+              "manualScore": null
+            },
+            "VN2": {
+              "target": 10.0,
+              "actual": 16.0,
+              "score": 1.0,
+              "manualScore": null
+            },
+            "VN3": {
+              "target": 90.0,
+              "actual": 100.0,
+              "score": 1.0,
+              "manualScore": null
+            },
+            "VN4": {
+              "target": 50000000.0,
+              "actual": 193600000.0,
+              "score": 1.0,
+              "manualScore": null
+            },
+            "VN5": {
+              "target": 0.9,
+              "actual": 0.875,
+              "score": 0.9722222222,
+              "manualScore": null
+            },
+            "VN6": {
+              "target": 0.9,
+              "actual": 1.0,
+              "score": 1.0,
+              "manualScore": null
+            }
+          }
+        },
+        {
+          "month": "Q2",
+          "quarter": "4-6",
+          "pillarScore": null,
+          "kpis": {
+            "VN1": {
+              "target": 3.0,
+              "actual": 0.0,
+              "score": 0.0,
+              "manualScore": null
+            },
+            "VN2": {
+              "target": 64.0,
+              "actual": 0.0,
+              "score": 0.0,
+              "manualScore": null
+            },
+            "VN3": {
+              "target": 90.0,
+              "actual": 0.0,
+              "score": 0.0,
+              "manualScore": null
+            },
+            "VN4": {
+              "target": 150000000.0,
+              "actual": 0.0,
+              "score": 0.0,
+              "manualScore": null
+            },
+            "VN5": {
+              "target": 0.9,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN6": {
+              "target": 0.9,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            }
+          }
+        },
+        {
+          "month": "Q3",
+          "quarter": "7-9",
+          "pillarScore": null,
+          "kpis": {
+            "VN1": {
+              "target": 0.0,
+              "actual": 0.0,
+              "score": null,
+              "manualScore": null
+            },
+            "VN2": {
+              "target": 0.0,
+              "actual": 0.0,
+              "score": null,
+              "manualScore": null
+            },
+            "VN3": {
+              "target": 0.0,
+              "actual": 0.0,
+              "score": null,
+              "manualScore": null
+            },
+            "VN4": {
+              "target": 0.0,
+              "actual": 0.0,
+              "score": null,
+              "manualScore": null
+            },
+            "VN5": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN6": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            }
+          }
+        },
+        {
+          "month": "Q4",
+          "quarter": "10-12",
+          "pillarScore": null,
+          "kpis": {
+            "VN1": {
+              "target": 0.0,
+              "actual": 0.0,
+              "score": null,
+              "manualScore": null
+            },
+            "VN2": {
+              "target": 0.0,
+              "actual": 0.0,
+              "score": null,
+              "manualScore": null
+            },
+            "VN3": {
+              "target": 0.0,
+              "actual": 0.0,
+              "score": null,
+              "manualScore": null
+            },
+            "VN4": {
+              "target": 0.0,
+              "actual": 0.0,
+              "score": null,
+              "manualScore": null
+            },
+            "VN5": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN6": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            }
+          }
+        },
+        {
+          "month": "YTD",
+          "quarter": "1-12",
+          "pillarScore": null,
+          "kpis": {
+            "VN1": {
+              "target": 4.0,
+              "actual": 1.0,
+              "score": 0.25,
+              "manualScore": null
+            },
+            "VN2": {
+              "target": 74.0,
+              "actual": 16.0,
+              "score": 0.2162162162,
+              "manualScore": null
+            },
+            "VN3": {
+              "target": 180.0,
+              "actual": 100.0,
+              "score": 0.5555555556,
+              "manualScore": null
+            },
+            "VN4": {
+              "target": 200000000.0,
+              "actual": 193600000.0,
+              "score": 0.968,
+              "manualScore": null
+            },
+            "VN5": {
+              "target": 0.9,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "VN6": {
+              "target": 0.9,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            }
+          }
+        }
+      ]
+    },
+    "INTL": {
+      "kpiCodes": [
+        "INT1",
+        "INT2",
+        "INT3"
+      ],
+      "months": [
+        {
+          "month": "Jan",
+          "quarter": "Q1",
+          "pillarScore": null,
+          "kpis": {
+            "INT1": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "INT2": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "INT3": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            }
+          }
+        },
+        {
+          "month": "Feb",
+          "quarter": "Q1",
+          "pillarScore": null,
+          "kpis": {
+            "INT1": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "INT2": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "INT3": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            }
+          }
+        },
+        {
+          "month": "Mar",
+          "quarter": "Q1",
+          "pillarScore": null,
+          "kpis": {
+            "INT1": {
+              "target": 90.0,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "INT2": {
+              "target": 100.0,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "INT3": {
+              "target": 80.0,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            }
+          }
+        },
+        {
+          "month": "Apr",
+          "quarter": "Q2",
+          "pillarScore": null,
+          "kpis": {
+            "INT1": {
+              "target": 90.0,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "INT2": {
+              "target": 100.0,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "INT3": {
+              "target": 80.0,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            }
+          }
+        },
+        {
+          "month": "May",
+          "quarter": "Q2",
+          "pillarScore": null,
+          "kpis": {
+            "INT1": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "INT2": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "INT3": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            }
+          }
+        },
+        {
+          "month": "Jun",
+          "quarter": "Q2",
+          "pillarScore": null,
+          "kpis": {
+            "INT1": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "INT2": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "INT3": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            }
+          }
+        },
+        {
+          "month": "Jul",
+          "quarter": "Q3",
+          "pillarScore": null,
+          "kpis": {
+            "INT1": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "INT2": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "INT3": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            }
+          }
+        },
+        {
+          "month": "Aug",
+          "quarter": "Q3",
+          "pillarScore": null,
+          "kpis": {
+            "INT1": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "INT2": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "INT3": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            }
+          }
+        },
+        {
+          "month": "Sep",
+          "quarter": "Q3",
+          "pillarScore": null,
+          "kpis": {
+            "INT1": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "INT2": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "INT3": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            }
+          }
+        },
+        {
+          "month": "Oct",
+          "quarter": "Q4",
+          "pillarScore": null,
+          "kpis": {
+            "INT1": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "INT2": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "INT3": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            }
+          }
+        },
+        {
+          "month": "Nov",
+          "quarter": "Q4",
+          "pillarScore": null,
+          "kpis": {
+            "INT1": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "INT2": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "INT3": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            }
+          }
+        },
+        {
+          "month": "Dec",
+          "quarter": "Q4",
+          "pillarScore": null,
+          "kpis": {
+            "INT1": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "INT2": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            },
+            "INT3": {
+              "target": null,
+              "actual": null,
+              "score": null,
+              "manualScore": null
+            }
+          }
+        },
+        {
+          "month": "Q1",
+          "quarter": "1-3",
+          "pillarScore": null,
+          "kpis": {
+            "INT1": {
+              "target": 90.0,
+              "actual": 0.0,
+              "score": 0.0,
+              "manualScore": null
+            },
+            "INT2": {
+              "target": 100.0,
+              "actual": 0.0,
+              "score": 0.0,
+              "manualScore": null
+            },
+            "INT3": {
+              "target": 80.0,
+              "actual": 0.0,
+              "score": 0.0,
+              "manualScore": null
+            }
+          }
+        },
+        {
+          "month": "Q2",
+          "quarter": "4-6",
+          "pillarScore": null,
+          "kpis": {
+            "INT1": {
+              "target": 90.0,
+              "actual": 0.0,
+              "score": 0.0,
+              "manualScore": null
+            },
+            "INT2": {
+              "target": 100.0,
+              "actual": 0.0,
+              "score": 0.0,
+              "manualScore": null
+            },
+            "INT3": {
+              "target": 80.0,
+              "actual": 0.0,
+              "score": 0.0,
+              "manualScore": null
+            }
+          }
+        },
+        {
+          "month": "Q3",
+          "quarter": "7-9",
+          "pillarScore": null,
+          "kpis": {
+            "INT1": {
+              "target": 0.0,
+              "actual": 0.0,
+              "score": null,
+              "manualScore": null
+            },
+            "INT2": {
+              "target": 0.0,
+              "actual": 0.0,
+              "score": null,
+              "manualScore": null
+            },
+            "INT3": {
+              "target": 0.0,
+              "actual": 0.0,
+              "score": null,
+              "manualScore": null
+            }
+          }
+        },
+        {
+          "month": "Q4",
+          "quarter": "10-12",
+          "pillarScore": null,
+          "kpis": {
+            "INT1": {
+              "target": 0.0,
+              "actual": 0.0,
+              "score": null,
+              "manualScore": null
+            },
+            "INT2": {
+              "target": 0.0,
+              "actual": 0.0,
+              "score": null,
+              "manualScore": null
+            },
+            "INT3": {
+              "target": 0.0,
+              "actual": 0.0,
+              "score": null,
+              "manualScore": null
+            }
+          }
+        },
+        {
+          "month": "YTD",
+          "quarter": "1-12",
+          "pillarScore": null,
+          "kpis": {
+            "INT1": {
+              "target": 180.0,
+              "actual": 0.0,
+              "score": 0.0,
+              "manualScore": null
+            },
+            "INT2": {
+              "target": 200.0,
+              "actual": 0.0,
+              "score": 0.0,
+              "manualScore": null
+            },
+            "INT3": {
+              "target": 160.0,
+              "actual": 0.0,
+              "score": 0.0,
+              "manualScore": null
+            }
+          }
+        }
+      ]
+    }
+  },
+  "partnerCare": {
+    "monthlyPlan": [
+      {
+        "month": "Jan",
+        "quarter": "Q1",
+        "plannedNew": 0.0,
+        "actualNew": 0.0,
+        "complianceNew": null,
+        "plannedExisting": 0.0,
+        "actualExisting": 0.0,
+        "complianceExisting": null,
+        "notes": ""
+      },
+      {
+        "month": "Feb",
+        "quarter": "Q1",
+        "plannedNew": 0.0,
+        "actualNew": 0.0,
+        "complianceNew": null,
+        "plannedExisting": 0.0,
+        "actualExisting": 0.0,
+        "complianceExisting": null,
+        "notes": ""
+      },
+      {
+        "month": "Mar",
+        "quarter": "Q1",
+        "plannedNew": 3.0,
+        "actualNew": 3.0,
+        "complianceNew": 1.0,
+        "plannedExisting": 8.0,
+        "actualExisting": 7.0,
+        "complianceExisting": 0.875,
+        "notes": ""
+      },
+      {
+        "month": "Apr",
+        "quarter": "Q2",
+        "plannedNew": 0.0,
+        "actualNew": 0.0,
+        "complianceNew": null,
+        "plannedExisting": 0.0,
+        "actualExisting": 0.0,
+        "complianceExisting": null,
+        "notes": ""
+      },
+      {
+        "month": "May",
+        "quarter": "Q2",
+        "plannedNew": 0.0,
+        "actualNew": 0.0,
+        "complianceNew": null,
+        "plannedExisting": 0.0,
+        "actualExisting": 0.0,
+        "complianceExisting": null,
+        "notes": ""
+      },
+      {
+        "month": "Jun",
+        "quarter": "Q2",
+        "plannedNew": 0.0,
+        "actualNew": 0.0,
+        "complianceNew": null,
+        "plannedExisting": 0.0,
+        "actualExisting": 0.0,
+        "complianceExisting": null,
+        "notes": ""
+      },
+      {
+        "month": "Jul",
+        "quarter": "Q3",
+        "plannedNew": 0.0,
+        "actualNew": 0.0,
+        "complianceNew": null,
+        "plannedExisting": 0.0,
+        "actualExisting": 0.0,
+        "complianceExisting": null,
+        "notes": ""
+      },
+      {
+        "month": "Aug",
+        "quarter": "Q3",
+        "plannedNew": 0.0,
+        "actualNew": 0.0,
+        "complianceNew": null,
+        "plannedExisting": 0.0,
+        "actualExisting": 0.0,
+        "complianceExisting": null,
+        "notes": ""
+      },
+      {
+        "month": "Sep",
+        "quarter": "Q3",
+        "plannedNew": 0.0,
+        "actualNew": 0.0,
+        "complianceNew": null,
+        "plannedExisting": 0.0,
+        "actualExisting": 0.0,
+        "complianceExisting": null,
+        "notes": ""
+      },
+      {
+        "month": "Oct",
+        "quarter": "Q4",
+        "plannedNew": 0.0,
+        "actualNew": 0.0,
+        "complianceNew": null,
+        "plannedExisting": 0.0,
+        "actualExisting": 0.0,
+        "complianceExisting": null,
+        "notes": ""
+      },
+      {
+        "month": "Nov",
+        "quarter": "Q4",
+        "plannedNew": 0.0,
+        "actualNew": 0.0,
+        "complianceNew": null,
+        "plannedExisting": 0.0,
+        "actualExisting": 0.0,
+        "complianceExisting": null,
+        "notes": ""
+      },
+      {
+        "month": "Dec",
+        "quarter": "Q4",
+        "plannedNew": 0.0,
+        "actualNew": 0.0,
+        "complianceNew": null,
+        "plannedExisting": 0.0,
+        "actualExisting": 0.0,
+        "complianceExisting": null,
+        "notes": ""
+      }
+    ],
+    "logs": [
+      {
+        "date": 3.0,
+        "month": "Mar",
+        "partnerKey": "PT-0099",
+        "partnerType": "Existed",
+        "partnerName": "NGUYỄN NGỌC LAN PHƯƠNG",
+        "touchpointType": "Tình hình hoạt động\nNhu cầu mở mới",
+        "channel": "Call/message",
+        "owner": "Phi Yến",
+        "status": "Done",
+        "dayDone": 3.0,
+        "result": "Dự kiến mở thêm cửa hàng ở Cần Giộc \nMong muốn hệ thống hỗ trợ sử dụng lại page Cần Giuộc cũ để truyền thông\nDự tháng 6 hoặc cuối năm vì cửa hàng hiện tại mới hoạt động nên cần ổn định",
+        "response": "- Đã kiểm tra Page Cần Giuộc còn hoạt động tốt nên có thể support được việc sử dụng khi mở lại\n- Ghi nhận thông tin nhu cầu, cũng đã báo với đối tác về việc nếu có người muốn mở sẽ thông báo cho đối tác biết"
+      },
+      {
+        "date": 5.0,
+        "month": "Mar",
+        "partnerKey": "PT-0098",
+        "partnerType": "Existed",
+        "partnerName": "VÕ MINH TÂM",
+        "touchpointType": "Tình hình hoạt động",
+        "channel": "Call/message",
+        "owner": "Phi Yến",
+        "status": "Planned",
+        "dayDone": null,
+        "result": "",
+        "response": ""
+      },
+      {
+        "date": 5.0,
+        "month": "Mar",
+        "partnerKey": "PT-0092",
+        "partnerType": "Existed",
+        "partnerName": "MAI THỊ TÂM",
+        "touchpointType": "Tình hình hoạt động\nNhu cầu mở mới",
+        "channel": "Call/message",
+        "owner": "Phi Yến",
+        "status": "Done",
+        "dayDone": 4.0,
+        "result": "Trao đổi về mặt bằng mới tại Đồng Phú\n- Tâm đã tìm được mặt bằng\n- Đã gửi hình ảnh và video mặt bằng\n- Cần tính tổng chi phí đầu tư địa điểm mới",
+        "response": "- Đã gửi thông tin mặt bằng cho Tài và Vũ check \n- Tính tổng chi phí đầu tư gửi lại vào 07/03 => đã gửi"
+      },
+      {
+        "date": 7.0,
+        "month": "Mar",
+        "partnerKey": "PT-0093",
+        "partnerType": "Existed",
+        "partnerName": "HOÀNG THỊ THANH TRÚC",
+        "touchpointType": "Tình hình hoạt động",
+        "channel": "Call/message",
+        "owner": "Phi Yến",
+        "status": "Done",
+        "dayDone": null,
+        "result": "Chị đang xem xét mở thêm cửa hàng ở gần cửa hàng hiện tại",
+        "response": "Đã gửi phần hỗ trợ chi phí nếu mở thêm cửa hàng"
+      },
+      {
+        "date": 31.0,
+        "month": "Mar",
+        "partnerKey": "PT-0094",
+        "partnerType": "Existed",
+        "partnerName": "LƯU THỊ CHÂM",
+        "touchpointType": "Tình hình hoạt động",
+        "channel": "Call/message",
+        "owner": "Phi Yến",
+        "status": "Done",
+        "dayDone": null,
+        "result": "Mong muốn đóng cửa hàng vì không thể dành thời gian tiếp tục kinh doanh",
+        "response": "Đã thông tin đến team để hỗ trợ"
+      },
+      {
+        "date": 7.0,
+        "month": "Mar",
+        "partnerKey": "PT-0090",
+        "partnerType": "Existed",
+        "partnerName": "NGUYỄN THỊ HƯỜNG",
+        "touchpointType": "Tình hình hoạt động",
+        "channel": "Call/message",
+        "owner": "Phi Yến",
+        "status": "Done",
+        "dayDone": null,
+        "result": "",
+        "response": ""
+      },
+      {
+        "date": 5.0,
+        "month": "Mar",
+        "partnerKey": "PT-0078",
+        "partnerType": "Existed",
+        "partnerName": "LÊ THỊ KIM KHOA",
+        "touchpointType": "Trao đổi việc ngưng hợp tác",
+        "channel": "Call/message",
+        "owner": "Phi Yến",
+        "status": "Done",
+        "dayDone": null,
+        "result": "Hiện tại chỉ cần hỗ trợ việc thu lại nguyên liệu và máy móc cho chỉ thôi",
+        "response": "Đã thông tin đến team để hỗ trợ"
+      },
+      {
+        "date": 15.0,
+        "month": "Mar",
+        "partnerKey": "PT-0102",
+        "partnerType": "New",
+        "partnerName": "NGUYỄN PHẠM ĐỨC",
+        "touchpointType": "Follow tình hình mở mới cửa hàng",
+        "channel": "Call/message",
+        "owner": "Phi Yến",
+        "status": "Done",
+        "dayDone": null,
+        "result": "Tình hình bán thử khá ổn\nNhân sự cửa hàng có 2 bạn đã ổn, hôm sau sẽ có 2 bạn đến thử việc, đang cần tuyển thêm người",
+        "response": ""
+      },
+      {
+        "date": 17.0,
+        "month": "Mar",
+        "partnerKey": "PT-0102",
+        "partnerType": "New",
+        "partnerName": "NGUYỄN PHẠM ĐỨC",
+        "touchpointType": "Hỗ trợ khai trương",
+        "channel": "Call/message",
+        "owner": "Phi Yến",
+        "status": "Done",
+        "dayDone": null,
+        "result": "Đến cửa hàng hỗ trợ khai trương chi nhánh",
+        "response": ""
+      },
+      {
+        "date": 27.0,
+        "month": "Mar",
+        "partnerKey": "PT-0102",
+        "partnerType": "New",
+        "partnerName": "NGUYỄN PHẠM ĐỨC",
+        "touchpointType": "Check tình hình hoạt động sau khai trương",
+        "channel": "Call/message",
+        "owner": "Phi Yến",
+        "status": "Done",
+        "dayDone": null,
+        "result": "- Đã có một bạn nấu sáng một bạn nấu chiều - tình hình vận hành ổn, chỉ có phần ship chưa ổn như An Di chia sẻ.\nChị có nói bạn quan sát khung giờ xem khung nào ship nhiều thì sắp thêm nhân sự vào hỗ trợ chứ k nhất thiết đúng ca mới vô làm, cái này @Hoàng An Di nói team Liêm hướng dẫn bạn nha\n- Bạn muốn bỏ nhóm cà phê, thêm các sản phẩm nhóm Matcha (Matcha latte Dâu,...) tại từ hôm giờ bán đc có 3 ly cf thôi\n- Update tình hình của Hoa: Vì cty cũ của bạn yêu cầu bạn lên hoàn tất mấy công việc còn sót trc khi nghỉ luôn nên Đức tạm thời chịu trách nhiệm, vài hôm xong Hoa về thì hai vợ chồng cùng take care. Hai vợ chồng vẫn vui vẻ hong có gây lộn",
+        "response": "Đã update các thông tin cho team"
+      },
+      {
+        "date": 30.0,
+        "month": "Mar",
+        "partnerKey": "PT-0072",
+        "partnerType": "Existed",
+        "partnerName": "VŨ ĐỨC TRUNG",
+        "touchpointType": "Chúc mừng sinh nhật đối tác",
+        "channel": "Call/message",
+        "owner": "Phi Yến",
+        "status": "Done",
+        "dayDone": null,
+        "result": "Đã gửi bánh kem mừng sinh nhật\nHỏi thăm sức khoẻ và mời về Cần Thơ choi",
+        "response": ""
+      }
+    ]
+  },
+  "intlProblems": [
+    {
+      "date": 3.0,
+      "month": "Mar",
+      "case": "",
+      "result": "",
+      "status": "",
+      "category": "",
+      "rootCause": "",
+      "slaHours": null,
+      "resolvedHours": null,
+      "owner": "",
+      "nextAction": ""
+    }
+  ],
+  "summary": [
+    {
+      "month": "Jan",
+      "quarter": "Q1",
+      "hrScore": null,
+      "vnScore": null,
+      "intlScore": null,
+      "totalScore": null,
+      "notes": "Kickoff Q1"
+    },
+    {
+      "month": "Feb",
+      "quarter": "Q1",
+      "hrScore": null,
+      "vnScore": null,
+      "intlScore": null,
+      "totalScore": null,
+      "notes": "Leadgen tăng"
+    },
+    {
+      "month": "Mar",
+      "quarter": "Q1",
+      "hrScore": 0.67,
+      "vnScore": 0.9966666667,
+      "intlScore": null,
+      "totalScore": null,
+      "notes": "Escalation 1 case"
+    },
+    {
+      "month": "Apr",
+      "quarter": "Q2",
+      "hrScore": null,
+      "vnScore": null,
+      "intlScore": null,
+      "totalScore": null,
+      "notes": "Ổn định pipeline"
+    },
+    {
+      "month": "May",
+      "quarter": "Q2",
+      "hrScore": null,
+      "vnScore": null,
+      "intlScore": null,
+      "totalScore": null,
+      "notes": ""
+    },
+    {
+      "month": "Jun",
+      "quarter": "Q2",
+      "hrScore": null,
+      "vnScore": null,
+      "intlScore": null,
+      "totalScore": null,
+      "notes": ""
+    },
+    {
+      "month": "Jul",
+      "quarter": "Q3",
+      "hrScore": null,
+      "vnScore": null,
+      "intlScore": null,
+      "totalScore": null,
+      "notes": ""
+    },
+    {
+      "month": "Aug",
+      "quarter": "Q3",
+      "hrScore": null,
+      "vnScore": null,
+      "intlScore": null,
+      "totalScore": null,
+      "notes": ""
+    },
+    {
+      "month": "Sep",
+      "quarter": "Q3",
+      "hrScore": null,
+      "vnScore": null,
+      "intlScore": null,
+      "totalScore": null,
+      "notes": ""
+    },
+    {
+      "month": "Oct",
+      "quarter": "Q4",
+      "hrScore": null,
+      "vnScore": null,
+      "intlScore": null,
+      "totalScore": null,
+      "notes": ""
+    },
+    {
+      "month": "Nov",
+      "quarter": "Q4",
+      "hrScore": null,
+      "vnScore": null,
+      "intlScore": null,
+      "totalScore": null,
+      "notes": ""
+    },
+    {
+      "month": "Dec",
+      "quarter": "Q4",
+      "hrScore": null,
+      "vnScore": null,
+      "intlScore": null,
+      "totalScore": null,
+      "notes": ""
+    }
+  ],
+  "version": 1
+}

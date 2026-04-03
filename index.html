@@ -1,0 +1,876 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HR + BD 2026 Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="bg-orb orb-a"></div>
+    <div class="bg-orb orb-b"></div>
+    <div class="bg-orb orb-c"></div>
+
+    <div class="app-shell">
+      <aside class="sidebar glass">
+        <div class="brand">
+          <div class="brand-mark">HR</div>
+          <div class="brand-text">
+            <p class="brand-title">Head Dashboard</p>
+            <p class="brand-subtitle">HR + Business Development</p>
+          </div>
+        </div>
+
+        <nav class="nav" id="page-nav">
+          <button class="nav-item active" data-page="dashboard">Dashboard Tổng</button>
+          <button class="nav-item" data-page="quarter-plan">Kế Hoạch Quý</button>
+          <button class="nav-item" data-page="pillar-hr">Human Resource</button>
+          <button class="nav-item" data-page="pillar-vn">National Franchise Development</button>
+          <button class="nav-item" data-page="pillar-intl">International Franchise Development</button>
+          <button class="nav-item" data-page="import-center">Trang Import</button>
+          <button class="nav-item" data-page="partner-info">Thông Tin Đối Tác</button>
+          <button class="nav-item" data-page="partner-care">Chăm Sóc Đối Tác</button>
+          <button class="nav-item" data-page="intl-problem">International Problem Record</button>
+        </nav>
+
+        <div class="sidebar-foot">
+          <p id="sync-status">Dữ liệu: chưa tải</p>
+        </div>
+      </aside>
+
+      <main class="main-panel">
+        <header class="topbar glass">
+          <div>
+            <h1 id="page-title">Dashboard Tổng</h1>
+            <p class="topbar-sub" id="page-subtitle">
+              Tổng hợp OKR năm, Target vs Actual theo tháng, quý, năm.
+            </p>
+          </div>
+          <div class="topbar-actions">
+            <label>
+              Kỳ tháng
+              <select id="month-select"></select>
+            </label>
+            <label>
+              Kỳ quý
+              <select id="quarter-select">
+                <option value="Q1">Q1</option>
+                <option value="Q2">Q2</option>
+                <option value="Q3">Q3</option>
+                <option value="Q4">Q4</option>
+              </select>
+            </label>
+            <button id="save-local-btn" class="btn btn-primary">Lưu local</button>
+          </div>
+        </header>
+
+        <section class="page active" id="page-dashboard">
+          <article class="panel glass">
+            <div class="panel-head">
+              <h3>OKR Năm 2026: Target vs Actual</h3>
+              <p>Mỗi block là 1 OKR năm, hiển thị target, actual lũy kế và tỷ lệ hoàn thành.</p>
+            </div>
+            <div id="dash-annual-okr-cards" class="cards-grid annual-okr-grid"></div>
+          </article>
+
+          <div class="layout-two">
+            <article class="panel glass">
+              <div class="panel-head">
+                <h3>Target vs Actual theo tháng</h3>
+                <p>Tổng hợp 3 pillar, lũy kế target-weighted</p>
+              </div>
+              <div id="dash-month-bars" class="bar-track-list"></div>
+            </article>
+
+            <article class="panel glass">
+              <div class="panel-head">
+                <h3>Điểm theo Pillar</h3>
+                <p>Điểm kỳ tháng đang chọn và đóng góp trọng số</p>
+              </div>
+              <div id="dash-pillar-breakdown" class="pillar-breakdown"></div>
+            </article>
+          </div>
+
+        </section>
+
+        <section class="page" id="page-quarter-plan">
+          <article class="panel glass">
+            <div class="panel-head">
+              <h3>OKR Quý: Target vs Actual</h3>
+              <p>Mỗi hàng là 1 OKR quý với 3 block: Target, Actual lũy kế quý, Tỷ lệ đạt.</p>
+            </div>
+            <div id="qplan-okr-cards" class="cards-grid annual-okr-grid"></div>
+          </article>
+
+          <article class="panel glass">
+            <div class="panel-head">
+              <h3>Bảng OKR Quý Chi Tiết</h3>
+              <p>Chi tiết theo quý đang chọn</p>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Quý</th>
+                    <th>Pillar</th>
+                    <th>Tên OKR quý</th>
+                    <th>Target</th>
+                    <th>Actual</th>
+                    <th>% đạt</th>
+                    <th>Notes</th>
+                  </tr>
+                </thead>
+                <tbody id="quarter-plan-table"></tbody>
+              </table>
+            </div>
+          </article>
+
+          <article class="panel glass">
+            <div class="panel-head">
+              <h3>Phân tích định hướng quý</h3>
+              <p>Đánh giá khoảng cách và hành động ưu tiên quý hiện tại</p>
+            </div>
+            <ul id="qplan-insight" class="insight-list"></ul>
+          </article>
+        </section>
+
+        <section class="page" id="page-pillar-hr"></section>
+        <section class="page" id="page-pillar-vn"></section>
+        <section class="page" id="page-pillar-intl"></section>
+
+        <section class="page" id="page-import-center">
+          <div class="cards-grid four">
+            <article class="metric-card glass">
+              <p class="metric-label">Dòng dữ liệu</p>
+              <h3 id="import-data-rows">0</h3>
+              <p class="metric-note">Tổng dòng import đang quản lý</p>
+            </article>
+            <article class="metric-card glass">
+              <p class="metric-label">Ô thiếu Target</p>
+              <h3 id="import-missing-target">0</h3>
+              <p class="metric-note">Trong KPI tháng</p>
+            </article>
+            <article class="metric-card glass">
+              <p class="metric-label">Ô thiếu Actual</p>
+              <h3 id="import-missing-actual">0</h3>
+              <p class="metric-note">Trong KPI tháng</p>
+            </article>
+            <article class="metric-card glass">
+              <p class="metric-label">Version</p>
+              <h3 id="import-version">1</h3>
+              <p class="metric-note">Version dữ liệu local</p>
+            </article>
+          </div>
+
+          <article class="panel glass">
+            <div class="panel-head">
+              <h3>Supabase Cloud Sync</h3>
+              <p>Lưu dữ liệu tập trung để nhiều người cùng xem/chỉnh sửa theo thời gian thực.</p>
+            </div>
+            <form id="supabase-config-form" class="form-grid five-col">
+              <div class="field span-2">
+                <label for="sb-url">Supabase URL</label>
+                <input id="sb-url" type="text" placeholder="https://xxxx.supabase.co" />
+              </div>
+              <div class="field span-2">
+                <label for="sb-anon-key">Supabase Anon Key</label>
+                <input id="sb-anon-key" type="password" placeholder="eyJhbGciOi..." />
+              </div>
+              <div class="field">
+                <label for="sb-table">Table</label>
+                <input id="sb-table" type="text" placeholder="dashboard_state" />
+              </div>
+              <div class="field">
+                <label for="sb-state-key">State key</label>
+                <input id="sb-state-key" type="text" placeholder="global" />
+              </div>
+              <div class="field">
+                <label for="sb-auto-sync">Auto sync</label>
+                <input id="sb-auto-sync" type="checkbox" />
+              </div>
+              <div class="field">
+                <label>Cloud mode</label>
+                <input id="sb-cloud-mode" type="text" readonly />
+              </div>
+              <button class="btn btn-primary" id="sb-save-config-btn" type="button">Lưu cấu hình</button>
+              <button class="btn btn-secondary" id="sb-test-btn" type="button">Test kết nối</button>
+              <button class="btn btn-secondary" id="sb-pull-btn" type="button">Tải từ cloud</button>
+              <button class="btn btn-secondary" id="sb-push-btn" type="button">Đẩy lên cloud</button>
+            </form>
+            <div class="sync-meta-row">
+              <p>Last pull: <strong id="sb-last-pull">-</strong></p>
+              <p>Last push: <strong id="sb-last-push">-</strong></p>
+            </div>
+          </article>
+
+          <article class="panel glass">
+            <div class="panel-head">
+              <h3>1) Nhập OKR Tổng Năm 2026</h3>
+              <p>Nhập OKR năm và target từng pillar để đo lũy kế trên Dashboard</p>
+            </div>
+            <form id="annual-okr-form" class="form-grid five-col">
+              <div class="field">
+                <label for="annual-okr-pillar">Pillar</label>
+                <select id="annual-okr-pillar"></select>
+              </div>
+              <div class="field">
+                <label for="annual-okr-code">Mã OKR</label>
+                <input id="annual-okr-code" type="text" placeholder="VD: A-HR-01" />
+              </div>
+              <div class="field">
+                <label for="annual-okr-title">Tên OKR năm</label>
+                <input id="annual-okr-title" type="text" />
+              </div>
+              <div class="field">
+                <label for="annual-okr-target">Target năm</label>
+                <input id="annual-okr-target" type="number" step="any" />
+              </div>
+              <div class="field">
+                <label for="annual-okr-unit">Unit</label>
+                <input id="annual-okr-unit" type="text" placeholder="%, VND, điểm..." />
+              </div>
+              <div class="field span-2">
+                <label for="annual-okr-notes">Ghi chú</label>
+                <input id="annual-okr-notes" type="text" />
+              </div>
+              <button class="btn btn-primary" type="submit">Thêm OKR năm</button>
+            </form>
+            <div class="table-wrap mt-12">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Pillar</th>
+                    <th>Mã OKR</th>
+                    <th>OKR Năm</th>
+                    <th>Target</th>
+                    <th>Unit</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody id="annual-okr-table"></tbody>
+              </table>
+            </div>
+          </article>
+
+          <article class="panel glass">
+            <div class="panel-head">
+              <h3>2) Nhập OKR Theo Quý (mỗi pillar)</h3>
+              <p>Nhập OKR quý + target để đo lũy kế trên trang Kế hoạch quý</p>
+            </div>
+            <form id="quarterly-okr-form" class="form-grid five-col">
+              <div class="field">
+                <label for="quarterly-okr-quarter">Quý</label>
+                <select id="quarterly-okr-quarter"></select>
+              </div>
+              <div class="field">
+                <label for="quarterly-okr-pillar">Pillar</label>
+                <select id="quarterly-okr-pillar"></select>
+              </div>
+              <div class="field">
+                <label for="quarterly-okr-code">Mã OKR Quý</label>
+                <input id="quarterly-okr-code" type="text" placeholder="VD: Q2-HR-01" />
+              </div>
+              <div class="field">
+                <label for="quarterly-okr-title">Tên OKR Quý</label>
+                <input id="quarterly-okr-title" type="text" />
+              </div>
+              <div class="field">
+                <label for="quarterly-okr-target">Target Quý</label>
+                <input id="quarterly-okr-target" type="number" step="any" />
+              </div>
+              <div class="field">
+                <label for="quarterly-okr-unit">Unit</label>
+                <input id="quarterly-okr-unit" type="text" placeholder="%, VND, điểm..." />
+              </div>
+              <div class="field">
+                <label for="quarterly-okr-link-annual">Link OKR Năm</label>
+                <select id="quarterly-okr-link-annual"></select>
+              </div>
+              <div class="field span-2">
+                <label for="quarterly-okr-notes">Ghi chú</label>
+                <input id="quarterly-okr-notes" type="text" />
+              </div>
+              <button class="btn btn-primary" type="submit">Thêm OKR quý</button>
+            </form>
+            <div class="table-wrap mt-12">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Quý</th>
+                    <th>Pillar</th>
+                    <th>Mã OKR</th>
+                    <th>OKR Quý</th>
+                    <th>Target</th>
+                    <th>Unit</th>
+                    <th>OKR Năm Liên Kết</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody id="quarterly-okr-table"></tbody>
+              </table>
+            </div>
+          </article>
+
+          <article class="panel glass">
+            <div class="panel-head">
+              <h3>3) Nhập Target Tháng Theo Pillar (OKR Tháng)</h3>
+              <p>OKR tháng phải link với OKR quý đã nhập</p>
+            </div>
+            <form id="monthly-okr-form" class="form-grid five-col">
+              <div class="field">
+                <label for="monthly-okr-month">Tháng</label>
+                <select id="monthly-okr-month"></select>
+              </div>
+              <div class="field">
+                <label for="monthly-okr-pillar">Pillar</label>
+                <select id="monthly-okr-pillar"></select>
+              </div>
+              <div class="field">
+                <label for="monthly-okr-link-quarterly">Link OKR Quý</label>
+                <select id="monthly-okr-link-quarterly"></select>
+              </div>
+              <div class="field span-2">
+                <label for="monthly-okr-title">Tên OKR Tháng</label>
+                <input id="monthly-okr-title" type="text" />
+              </div>
+              <div class="field">
+                <label for="monthly-okr-target">Target tháng</label>
+                <input id="monthly-okr-target" type="number" step="any" />
+              </div>
+              <div class="field">
+                <label for="monthly-okr-unit">Unit</label>
+                <input id="monthly-okr-unit" type="text" placeholder="%, VND, điểm..." />
+              </div>
+              <div class="field span-2">
+                <label for="monthly-okr-notes">Notes</label>
+                <input id="monthly-okr-notes" type="text" />
+              </div>
+              <button class="btn btn-primary" type="submit">Thêm OKR tháng</button>
+            </form>
+            <div class="table-wrap mt-12">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Tháng</th>
+                    <th>Pillar</th>
+                    <th>OKR Quý Liên Kết</th>
+                    <th>OKR Tháng</th>
+                    <th>Target</th>
+                    <th>Unit</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody id="monthly-okr-table"></tbody>
+              </table>
+            </div>
+          </article>
+
+          <article class="panel glass">
+            <div class="panel-head">
+              <h3>4) Nhập KPI Tháng Theo OKR Pillar (Target)</h3>
+              <p>1 OKR có thể có nhiều KPI, dùng để đo lường tại Dashboard và trang Pillar</p>
+            </div>
+            <form id="monthly-kpi-form" class="form-grid five-col">
+              <div class="field">
+                <label for="monthly-kpi-month">Tháng</label>
+                <select id="monthly-kpi-month"></select>
+              </div>
+              <div class="field">
+                <label for="monthly-kpi-pillar">Pillar</label>
+                <select id="monthly-kpi-pillar"></select>
+              </div>
+              <div class="field">
+                <label for="monthly-kpi-link-month-okr">Link OKR Tháng</label>
+                <select id="monthly-kpi-link-month-okr"></select>
+              </div>
+              <div class="field span-2">
+                <label for="monthly-kpi-name">Tên KPI</label>
+                <input id="monthly-kpi-name" type="text" />
+              </div>
+              <div class="field">
+                <label for="monthly-kpi-target">Target KPI tháng</label>
+                <input id="monthly-kpi-target" type="number" step="any" />
+              </div>
+              <div class="field">
+                <label for="monthly-kpi-unit">Unit</label>
+                <input id="monthly-kpi-unit" type="text" placeholder="%, VND, lead..." />
+              </div>
+              <button class="btn btn-primary" type="submit">Thêm KPI tháng</button>
+            </form>
+            <div class="table-wrap mt-12">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Tháng</th>
+                    <th>Pillar</th>
+                    <th>OKR Tháng</th>
+                    <th>KPI</th>
+                    <th>Target</th>
+                    <th>Actual</th>
+                    <th>Unit</th>
+                    <th>Status</th>
+                    <th>Kết quả</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody id="monthly-kpi-table"></tbody>
+              </table>
+            </div>
+          </article>
+
+          <article class="panel glass">
+            <div class="panel-head">
+              <h3>5) Nhập Kế Hoạch Tháng Theo OKR Tháng</h3>
+              <p>Kế hoạch tháng hiển thị ở trang từng pillar</p>
+            </div>
+            <form id="monthly-plan-form" class="form-grid five-col">
+              <div class="field">
+                <label for="monthly-plan-month">Tháng</label>
+                <select id="monthly-plan-month"></select>
+              </div>
+              <div class="field">
+                <label for="monthly-plan-pillar">Pillar</label>
+                <select id="monthly-plan-pillar"></select>
+              </div>
+              <div class="field">
+                <label for="monthly-plan-link-okr">Link OKR Tháng</label>
+                <select id="monthly-plan-link-okr"></select>
+              </div>
+              <div class="field span-2">
+                <label for="monthly-plan-action">Action Plan Tháng</label>
+                <input id="monthly-plan-action" type="text" />
+              </div>
+              <div class="field">
+                <label for="monthly-plan-owner">Owner</label>
+                <input id="monthly-plan-owner" type="text" />
+              </div>
+              <div class="field">
+                <label for="monthly-plan-due">Due</label>
+                <input id="monthly-plan-due" type="text" placeholder="VD: 2026-04-30" />
+              </div>
+              <div class="field">
+                <label for="monthly-plan-status">Status</label>
+                <input id="monthly-plan-status" type="text" placeholder="Planned/In Progress/Done" />
+              </div>
+              <div class="field span-2">
+                <label for="monthly-plan-result">Kết quả</label>
+                <input id="monthly-plan-result" type="text" placeholder="Text hoặc https://..." />
+              </div>
+              <button class="btn btn-primary" type="submit">Thêm kế hoạch tháng</button>
+            </form>
+            <div class="table-wrap mt-12">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Tháng</th>
+                    <th>Pillar</th>
+                    <th>OKR liên kết</th>
+                    <th>Action</th>
+                    <th>Owner</th>
+                    <th>Due</th>
+                    <th>Status</th>
+                    <th>Kết quả</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody id="monthly-plan-table"></tbody>
+              </table>
+            </div>
+          </article>
+
+          <article class="panel glass">
+            <div class="panel-head">
+              <h3>6) Danh Sách Khách Chăm Sóc Theo Tháng</h3>
+              <p>
+                Thêm trực tiếp từng dòng theo tháng. Tên + Type tự điền theo mã đối tác từ CRM master và cập nhật realtime.
+              </p>
+            </div>
+            <form id="import-care-form" class="form-grid five-col">
+              <div class="field">
+                <label for="import-care-month">Tháng</label>
+                <select id="import-care-month"></select>
+              </div>
+              <div class="field">
+                <label for="import-care-day">Ngày chăm sóc</label>
+                <input id="import-care-day" type="number" min="1" max="31" />
+              </div>
+              <div class="field">
+                <label for="import-care-partner-key">Mã đối tác</label>
+                <select id="import-care-partner-key"></select>
+              </div>
+              <div class="field span-2">
+                <label for="import-care-partner-name">Tên đối tác</label>
+                <input id="import-care-partner-name" type="text" readonly />
+              </div>
+              <div class="field">
+                <label for="import-care-partner-type">Type</label>
+                <input id="import-care-partner-type" type="text" readonly />
+              </div>
+              <div class="field">
+                <label for="import-care-owner">Owner</label>
+                <input id="import-care-owner" type="text" />
+              </div>
+              <div class="field">
+                <label for="import-care-touchpoint">Touchpoint Type</label>
+                <input id="import-care-touchpoint" type="text" placeholder="Tình hình hoạt động / Follow-up..." />
+              </div>
+              <div class="field">
+                <label for="import-care-channel">Channel</label>
+                <input id="import-care-channel" type="text" placeholder="Call/message" />
+              </div>
+              <button class="btn btn-primary" type="submit">Thêm vào danh sách tháng</button>
+            </form>
+            <div class="table-wrap mt-12">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Date</th>
+                    <th>Mã đối tác</th>
+                    <th>Type</th>
+                    <th>Tên đối tác</th>
+                    <th>Touchpoint</th>
+                    <th>Channel</th>
+                    <th>Owner</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody id="import-care-draft-table"></tbody>
+              </table>
+            </div>
+          </article>
+        </section>
+
+        <section class="page" id="page-partner-info">
+          <article class="panel glass">
+            <div class="panel-head">
+              <h3>Nguồn Đối Tác Realtime (CRM_IMPORT)</h3>
+              <p>Dùng chung endpoint Apps Script hiện có, đọc trực tiếp dữ liệu đã tính sẵn từ sheet CRM_IMPORT.</p>
+            </div>
+            <div class="filter-row">
+              <label class="span-2">
+                Google Sheets Apps Script Endpoint
+                <input id="pc-sync-endpoint" type="text" placeholder="https://script.google.com/macros/s/.../exec" />
+              </label>
+              <button id="pc-sync-btn" class="btn btn-primary" type="button">Sync CRM_IMPORT</button>
+            </div>
+            <div class="sync-meta-row">
+              <p>Last sync: <strong id="pc-sync-last">-</strong></p>
+              <p>Partner đã sync: <strong id="pc-sync-count">0</strong></p>
+            </div>
+          </article>
+
+          <div class="cards-grid five">
+            <article class="metric-card glass">
+              <p class="metric-label">Total Partner</p>
+              <h3 id="pi-total-partner">0</h3>
+              <p class="metric-note">Unique Partner_Code</p>
+            </article>
+            <article class="metric-card glass">
+              <p class="metric-label">Existing Eligible</p>
+              <h3 id="pi-existing-eligible">0</h3>
+              <p class="metric-note">Cần touch theo cadence</p>
+            </article>
+            <article class="metric-card glass">
+              <p class="metric-label">New (<= 90 ngày)</p>
+              <h3 id="pi-new-count">0</h3>
+              <p class="metric-note">Dựa theo cột phân loại</p>
+            </article>
+            <article class="metric-card glass">
+              <p class="metric-label">NoTouchThisYear</p>
+              <h3 id="pi-no-touch">0</h3>
+              <p class="metric-note">Theo cột phân loại</p>
+            </article>
+            <article class="metric-card glass">
+              <p class="metric-label">Active Partner</p>
+              <h3 id="pi-active-partner">0</h3>
+              <p class="metric-note">Status hoạt động</p>
+            </article>
+          </div>
+
+          <article class="panel glass">
+            <div class="panel-head">
+              <h3>Bảng CRM_IMPORT</h3>
+              <p>Hiển thị dữ liệu đối tác từ sheet CRM_IMPORT (đã chuẩn hóa tên cột để theo dõi trên web).</p>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Row_ID</th>
+                    <th>Partner_Code</th>
+                    <th>Partner Name</th>
+                    <th>Partner Type</th>
+                    <th>Owner</th>
+                    <th>Branch</th>
+                    <th>Region</th>
+                    <th>Status</th>
+                    <th>Contract Date</th>
+                    <th>Opening Date</th>
+                    <th>Closing Date</th>
+                    <th>Eligible Existing</th>
+                  </tr>
+                </thead>
+                <tbody id="pi-crm-table"></tbody>
+              </table>
+            </div>
+          </article>
+        </section>
+
+        <section class="page" id="page-partner-care">
+          <div class="cards-grid four">
+            <article class="metric-card glass">
+              <p class="metric-label">Planned Touchpoints</p>
+              <h3 id="pc-planned">0</h3>
+              <p class="metric-note">Tháng đang chọn</p>
+            </article>
+            <article class="metric-card glass">
+              <p class="metric-label">Done Touchpoints</p>
+              <h3 id="pc-done">0</h3>
+              <p class="metric-note">Log trạng thái Done</p>
+            </article>
+            <article class="metric-card glass">
+              <p class="metric-label">Compliance</p>
+              <h3 id="pc-compliance">0%</h3>
+              <p class="metric-note">Done / Planned</p>
+            </article>
+            <article class="metric-card glass">
+              <p class="metric-label">Partners Active</p>
+              <h3 id="pc-partners">0</h3>
+              <p class="metric-note">Có ít nhất 1 touchpoint</p>
+            </article>
+          </div>
+
+          <article class="panel glass">
+            <div class="panel-head">
+              <h3>Bộ lọc chăm sóc đối tác</h3>
+              <p>Chi tiết theo partner cụ thể</p>
+            </div>
+            <div class="filter-row">
+              <label>
+                Loại đối tác
+                <select id="pc-filter-type">
+                  <option value="">Tất cả</option>
+                  <option value="New">New</option>
+                  <option value="Existed">Existed</option>
+                </select>
+              </label>
+              <label>
+                Trạng thái
+                <select id="pc-filter-status">
+                  <option value="">Tất cả</option>
+                  <option value="Done">Done</option>
+                  <option value="Planned">Planned</option>
+                  <option value="Missed">Missed</option>
+                  <option value="Rescheduled">Rescheduled</option>
+                </select>
+              </label>
+            </div>
+          </article>
+
+          <article class="panel glass">
+            <div class="panel-head">
+              <h3>Tổng hợp theo partner</h3>
+              <p>Số touchpoint, tỷ lệ done và đề xuất chăm sóc tiếp theo</p>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Partner</th>
+                    <th>Type</th>
+                    <th>Total</th>
+                    <th>Done</th>
+                    <th>Done %</th>
+                  </tr>
+                </thead>
+                <tbody id="pc-partner-table"></tbody>
+              </table>
+            </div>
+          </article>
+
+          <article class="panel glass">
+            <div class="panel-head">
+              <h3>Nhận định chăm sóc đối tác</h3>
+              <p>Nhận định, phân tích và hành động theo dữ liệu partner-level</p>
+            </div>
+            <ul id="pc-insight" class="insight-list"></ul>
+          </article>
+
+          <article class="panel glass">
+            <div class="panel-head">
+              <h3>Danh Sách Cần Chăm Sóc Tháng</h3>
+              <p>Dữ liệu lấy từ block import theo tháng và cập nhật realtime ngay sau khi bấm “Thêm vào danh sách tháng”.</p>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Date</th>
+                    <th>Partner Code</th>
+                    <th>Type</th>
+                    <th>Partner Name</th>
+                    <th>Touchpoint</th>
+                    <th>Channel</th>
+                    <th>Owner</th>
+                    <th>Status</th>
+                    <th>Day Done</th>
+                    <th>Result</th>
+                    <th>Response</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody id="pc-care-roster-table"></tbody>
+              </table>
+            </div>
+          </article>
+
+          <article class="panel glass">
+            <div class="panel-head">
+              <h3>Log chăm sóc chi tiết</h3>
+              <p>Nhật ký làm việc thực tế theo từng đối tác</p>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Ngày</th>
+                    <th>Tháng</th>
+                    <th>Partner</th>
+                    <th>Type</th>
+                    <th>Touchpoint</th>
+                    <th>Owner</th>
+                    <th>Status</th>
+                    <th>Kết quả</th>
+                    <th>Response</th>
+                  </tr>
+                </thead>
+                <tbody id="pc-log-table"></tbody>
+              </table>
+            </div>
+          </article>
+        </section>
+
+        <section class="page" id="page-intl-problem">
+          <div class="cards-grid four">
+            <article class="metric-card glass">
+              <p class="metric-label">Tổng Case</p>
+              <h3 id="ip-total-case">0</h3>
+              <p class="metric-note">Trong năm 2026</p>
+            </article>
+            <article class="metric-card glass">
+              <p class="metric-label">Open Case</p>
+              <h3 id="ip-open-case">0</h3>
+              <p class="metric-note">Đang theo dõi</p>
+            </article>
+            <article class="metric-card glass">
+              <p class="metric-label">SLA Breach</p>
+              <h3 id="ip-breach-case">0</h3>
+              <p class="metric-note">Resolved hours > SLA</p>
+            </article>
+            <article class="metric-card glass">
+              <p class="metric-label">Avg Resolve (h)</p>
+              <h3 id="ip-avg-resolve">0</h3>
+              <p class="metric-note">Thời gian xử lý trung bình</p>
+            </article>
+          </div>
+
+          <div class="layout-two">
+            <article class="panel glass">
+              <div class="panel-head">
+                <h3>Thêm bản ghi vấn đề quốc tế</h3>
+                <p>Ghi rõ nhóm vấn đề, nguyên nhân gốc và hành động tiếp theo</p>
+              </div>
+              <form id="ip-form" class="form-grid">
+                <div class="field">
+                  <label for="ip-date">Ngày</label>
+                  <input id="ip-date" type="number" min="1" max="31" />
+                </div>
+                <div class="field">
+                  <label for="ip-month">Tháng</label>
+                  <select id="ip-month"></select>
+                </div>
+                <div class="field">
+                  <label for="ip-status">Status</label>
+                  <select id="ip-status">
+                    <option value="Open">Open</option>
+                    <option value="In Progress">In Progress</option>
+                    <option value="Resolved">Resolved</option>
+                    <option value="Closed">Closed</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="ip-category">Category</label>
+                  <input id="ip-category" type="text" placeholder="Quality, Supply, Training..." />
+                </div>
+                <div class="field">
+                  <label for="ip-root-cause">Root cause</label>
+                  <input id="ip-root-cause" type="text" />
+                </div>
+                <div class="field">
+                  <label for="ip-sla">SLA (giờ)</label>
+                  <input id="ip-sla" type="number" step="any" />
+                </div>
+                <div class="field">
+                  <label for="ip-resolved">Resolved (giờ)</label>
+                  <input id="ip-resolved" type="number" step="any" />
+                </div>
+                <div class="field span-2">
+                  <label for="ip-case">Case</label>
+                  <input id="ip-case" type="text" />
+                </div>
+                <div class="field span-2">
+                  <label for="ip-result">Result</label>
+                  <input id="ip-result" type="text" />
+                </div>
+                <button class="btn btn-primary" type="submit">Thêm case</button>
+              </form>
+            </article>
+
+            <article class="panel glass">
+              <div class="panel-head">
+                <h3>Nhận định International</h3>
+                <p>Phân tích vấn đề theo root cause và khuyến nghị xử lý</p>
+              </div>
+              <ul id="ip-insight" class="insight-list"></ul>
+            </article>
+          </div>
+
+          <article class="panel glass">
+            <div class="panel-head">
+              <h3>Bảng vấn đề quốc tế</h3>
+              <p>Log case với SLA, status và action theo từng case</p>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Ngày</th>
+                    <th>Tháng</th>
+                    <th>Case</th>
+                    <th>Category</th>
+                    <th>Root Cause</th>
+                    <th>Status</th>
+                    <th>SLA (h)</th>
+                    <th>Resolved (h)</th>
+                    <th>Result</th>
+                  </tr>
+                </thead>
+                <tbody id="ip-table"></tbody>
+              </table>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <script src="./data/plan_2026_data.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
