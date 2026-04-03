@@ -1642,16 +1642,18 @@
     const tableInput = document.getElementById("sb-table");
     const keyInput = document.getElementById("sb-state-key");
     const autoSyncInput = document.getElementById("sb-auto-sync");
+    const autoSyncFlag = document.getElementById("sb-auto-sync-flag");
 
     if (urlInput && urlInput !== document.activeElement) urlInput.value = cleanText(cloudConfig.url);
     if (anonInput && anonInput !== document.activeElement) anonInput.value = cleanText(cloudConfig.anonKey);
     if (tableInput && tableInput !== document.activeElement) tableInput.value = cleanText(cloudConfig.table);
     if (keyInput && keyInput !== document.activeElement) keyInput.value = cleanText(cloudConfig.stateKey);
     if (autoSyncInput) autoSyncInput.checked = !!cloudConfig.autoSync;
+    if (autoSyncFlag) autoSyncFlag.value = cloudConfig.autoSync ? "Bật" : "Tắt";
 
     setText("sb-last-pull", cloudConfig.lastPullAt ? formatDateTime(cloudConfig.lastPullAt) : "-");
     setText("sb-last-push", cloudConfig.lastPushAt ? formatDateTime(cloudConfig.lastPushAt) : "-");
-    setText("sb-cloud-mode", isCloudSyncConfigured() ? "Đã cấu hình" : "Chưa cấu hình");
+    setText("sb-cloud-mode", getRuntimeCloudDefaults() ? "Auto (Vercel)" : isCloudSyncConfigured() ? "Đã cấu hình" : "Chưa cấu hình");
   }
 
   function renderPartnerInfo() {
@@ -3502,19 +3504,18 @@
         };
       }
       const parsed = JSON.parse(raw);
-      const merged = {
+      if (runtimeDefaults) {
+        return {
+          ...defaultCloudConfig(),
+          ...(parsed || {}),
+          ...runtimeDefaults,
+          autoSync: runtimeDefaults.autoSync,
+        };
+      }
+      return {
         ...defaultCloudConfig(),
-        ...(runtimeDefaults || {}),
         ...(parsed || {}),
       };
-      if (runtimeDefaults) {
-        if (!cleanText(merged.url)) merged.url = runtimeDefaults.url;
-        if (!cleanText(merged.anonKey)) merged.anonKey = runtimeDefaults.anonKey;
-        if (!cleanText(merged.table)) merged.table = runtimeDefaults.table;
-        if (!cleanText(merged.stateKey)) merged.stateKey = runtimeDefaults.stateKey;
-        if (typeof parsed?.autoSync !== "boolean") merged.autoSync = runtimeDefaults.autoSync;
-      }
-      return merged;
     } catch (error) {
       return {
         ...defaultCloudConfig(),

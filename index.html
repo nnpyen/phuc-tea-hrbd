@@ -171,34 +171,17 @@
           <article class="panel glass">
             <div class="panel-head">
               <h3>Supabase Cloud Sync</h3>
-              <p>Lưu dữ liệu tập trung để nhiều người cùng xem/chỉnh sửa theo thời gian thực.</p>
+              <p>Đã cấu hình tự động từ hệ thống. Không cần nhập tay URL/Key.</p>
             </div>
             <form id="supabase-config-form" class="form-grid five-col">
-              <div class="field span-2">
-                <label for="sb-url">Supabase URL</label>
-                <input id="sb-url" type="text" placeholder="https://xxxx.supabase.co" />
-              </div>
-              <div class="field span-2">
-                <label for="sb-anon-key">Supabase Anon Key</label>
-                <input id="sb-anon-key" type="password" placeholder="eyJhbGciOi..." />
-              </div>
-              <div class="field">
-                <label for="sb-table">Table</label>
-                <input id="sb-table" type="text" placeholder="dashboard_state" />
-              </div>
-              <div class="field">
-                <label for="sb-state-key">State key</label>
-                <input id="sb-state-key" type="text" placeholder="global" />
-              </div>
-              <div class="field">
-                <label for="sb-auto-sync">Auto sync</label>
-                <input id="sb-auto-sync" type="checkbox" />
-              </div>
               <div class="field">
                 <label>Cloud mode</label>
                 <input id="sb-cloud-mode" type="text" readonly />
               </div>
-              <button class="btn btn-primary" id="sb-save-config-btn" type="button">Lưu cấu hình</button>
+              <div class="field">
+                <label>Auto sync</label>
+                <input id="sb-auto-sync-flag" type="text" readonly />
+              </div>
               <button class="btn btn-secondary" id="sb-test-btn" type="button">Test kết nối</button>
               <button class="btn btn-secondary" id="sb-pull-btn" type="button">Tải từ cloud</button>
               <button class="btn btn-secondary" id="sb-push-btn" type="button">Đẩy lên cloud</button>
